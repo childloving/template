@@ -1,5 +1,5 @@
 import { compName, renderTemp } from './template';
-class {{template}} extends HTMLElement {
+class CompList extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: 'open' });
@@ -23,3 +23,4 @@ class {{template}} extends HTMLElement {
   }
 }
 
+customElements.define(compName, CompList);
